@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 63px;
+  width: 100%;
+  background-color: var(--footer-color);
+  color: var(--font-color);
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__content p:not(:first-child) {
+  border-bottom: 1px solid var(--font-color);
+  cursor: pointer;
+}
+
+.footer__content p:not(:last-child) {
+  margin-right: 32px;
+}
+
+@media only screen and (max-width: 568px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__content {
+    justify-content: center;
+  }
+}

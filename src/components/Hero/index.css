@@ -1,0 +1,106 @@
+.hero {
+  background-color: var(--secondary-color);
+}
+.hero__box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+.hero__starter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.hero__title-strong {
+  color: #31c062;
+  margin-right: 10px;
+}
+.hero__starter__content {
+  margin-bottom: 15px;
+}
+.hero__data-box {
+  margin: 54px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+.hero__data-chart {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 100px 265px;
+  background-image: url('../../assets/images/charts.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__results {
+  display: flex;
+}
+.hero__results__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  height: 150px;
+  margin-right: 20px;
+}
+.hero__results__right {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.hero__results__title {
+  color: #31c062;
+  font-size: 54px;
+  font-weight: bold;
+}
+.hero__results__title span {
+  font-size: 26px;
+}
+.hero__results__content {
+  width: 70%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero__results__content-green {
+  color: #31c062;
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 568px) {
+  .hero__box {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .hero__title {
+    font-size: 32px;
+    width: 70%;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .hero__starter__content {
+    width: 80%;
+  }
+  .hero__data-box {
+    grid-template-columns: 1fr;
+  }
+  .hero__results {
+    flex-direction: column;
+  }
+}

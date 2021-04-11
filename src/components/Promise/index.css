@@ -1,0 +1,32 @@
+.promise {
+  background-color: var(--color-light);
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.promise__title {
+  margin-bottom: 15px;
+}
+.promise__paragraph {
+  width: 80%;
+  margin: 15px auto;
+}
+.promise__signature {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+}
+
+@media only screen and (max-width: 568px) {
+  .promise__paragraph {
+    width: 90%;
+  }
+  .promise__signature {
+    top: 75%;
+    left: 50%;
+  }
+}
